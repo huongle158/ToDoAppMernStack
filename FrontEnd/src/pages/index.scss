@@ -1,0 +1,66 @@
+button.pin-box {
+  background-color: lightgray;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  height: 34px;
+  position: relative;
+  width: 60px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.pin {
+  background-color: white;
+  border-radius: 30px;
+  height: 30px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  width: 30px;
+  transition: left ease .5s;
+}
+
+button.on {
+  background-color: green;
+}
+
+button.on .pin {
+  left: 28px;
+}
+
+
+table,
+tr td {
+  border: 0px;
+}
+
+tbody {
+  display: block;
+  height: 50px;
+  overflow: auto;
+}
+
+thead,
+tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+thead {
+  width: calc(100% - 1em)
+}
